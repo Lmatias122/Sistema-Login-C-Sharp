@@ -22,9 +22,12 @@ namespace Sistema_Login
             
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        
+        private void pictureBox_btnLogin_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
+
+     
     }
 }

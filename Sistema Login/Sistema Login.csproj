@@ -98,5 +98,14 @@
   <ItemGroup>
     <None Include="Resources\Design_sem_nome__3_-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN-removebg-preview %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
