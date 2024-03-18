@@ -12,6 +12,8 @@ namespace Sistema_Login
 {
     public partial class FormLogin : Form
     {
+
+        public static bool Cancelar = false;
         public FormLogin()
         {
             InitializeComponent();
@@ -22,12 +24,43 @@ namespace Sistema_Login
             
         }
 
-        
-        private void pictureBox_btnLogin_Click(object sender, EventArgs e)
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            string name = txtUsuario.Text;
+            string password = txtPassword.Text;
+            if (CadastroUsuarios.Login(name, password))
+            {
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("O usuário ou a senha informados estão incorretos");
+                txtPassword.Text = "";
+                txtUsuario.Text = "";
+                txtUsuario.Focus();
+                Close();
+            }
         }
 
-     
+        private void checkSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                txtPassword.PasswordChar = default;
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Cancelar = true;
+            Close();
+        }
     }
 }

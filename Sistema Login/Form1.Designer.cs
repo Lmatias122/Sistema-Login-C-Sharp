@@ -34,19 +34,21 @@
             // label_BoasVindas
             // 
             this.label_BoasVindas.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BoasVindas.Location = new System.Drawing.Point(225, 168);
+            this.label_BoasVindas.Location = new System.Drawing.Point(242, 42);
+            this.label_BoasVindas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_BoasVindas.Name = "label_BoasVindas";
-            this.label_BoasVindas.Size = new System.Drawing.Size(626, 303);
+            this.label_BoasVindas.Size = new System.Drawing.Size(1159, 712);
             this.label_BoasVindas.TabIndex = 0;
             this.label_BoasVindas.Text = "Tela Inicial";
             this.label_BoasVindas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 639);
+            this.ClientSize = new System.Drawing.Size(1614, 983);
             this.Controls.Add(this.label_BoasVindas);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";

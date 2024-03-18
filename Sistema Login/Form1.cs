@@ -21,7 +21,20 @@ namespace Sistema_Login
         {
             FormLogin f = new FormLogin();
 
-            f.ShowDialog();
+            while(CadastroUsuarios.UsuarioLogado == null)
+            {
+                Visible = false;
+                f.ShowDialog();
+
+                if (FormLogin.Cancelar)
+                {
+                    Application.Exit();
+                    return;
+                }
+            }
+
+            label_BoasVindas.Text = String.Format("Seja Bem Vindo ,\n{0}",CadastroUsuarios.UsuarioLogado.Nome) ;
+             Visible = true;
         }
     }
 }
